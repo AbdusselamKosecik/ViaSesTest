@@ -54,7 +54,7 @@ cordova-plugin-whitelist 1.3.4 "Whitelist"
 
 9- proje içindeki ```/main/www/js/index.js``` 
 dosyasında inappbrowser örneğini inceleyebilirsiniz, 
-url kısmına webrtc urlini yazarak test edilebilir durumda.    
+url kısmına webrtc urlini değiştirdikten sonra, cordova run android komutu ile yeniden uygulamayı çıkıp testlerinizi gerçekleştirebilirsiniz.       
 
 Aşağıdaki şekilde eventler siteden uygulamaya geri paslanabilir.   
 
