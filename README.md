@@ -40,7 +40,7 @@ AndroidManifest.xml dosyasında eklemeler yapabilirsiniz.
 gerekli izinleri telefonunuzun uygulama ayarlarına girip,  Mikrofon ve kamera izinleri elle 
 açtıktan sonra testlerinizi gerçekleştirebilirsiniz.
 
-Şuan inappbrowserda yaşanılan kamera izni ile ilgili bir issue, buna benzer googleda aratılabilir
+Şuan inappbrowserda yaşanılan kamera izni ile ilgili bir issue, buna benzer googleda aratılabilir.    
 https://github.com/apache/cordova-plugin-inappbrowser/issues/741
 
 ```
