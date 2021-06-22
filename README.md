@@ -52,6 +52,10 @@ cordova-plugin-whitelist 1.3.4 "Whitelist"
 ```
 
 
-9- Aşağıdaki şekilde eventler siteden uygulamaya geri paslanabilir.   
+9- proje içindeki ```/main/www/js/index.js``` 
+dosyasında inappbrowser örneğini inceleyebilirsiniz, 
+url kısmına webrtc urlini yazarak test edilebilir durumda.    
+
+Aşağıdaki şekilde eventler siteden uygulamaya geri paslanabilir.   
 
 ```webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify({my_message: "message"}));```
