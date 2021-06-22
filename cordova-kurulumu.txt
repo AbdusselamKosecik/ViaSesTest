@@ -1,0 +1,55 @@
+Window bilgisayarda cordova kurulum
+
+1- Node.js kurulu olması gerekmektedir
+https://nodejs.org/en/download/
+
+2- java jdk 1.8 sürümü
+https://www.oracle.com/in/java/technologies/javase-downloads.html
+
+3- Android studio
+https://developer.android.com/studio
+
+4- Cmd command terminalden node komutu ile global olarak cordova cli kurma
+npm install -g cordova
+
+5- Github desktop programı ile projeyi indirin
+https://desktop.github.com/
+
+6- Cordova projesi açma
+// Test projesi içine girip, cordova run android ile  uygulamayı açabilirsiniz 
+(cihazınız bağlı iken telefonunuza apkyi yükleyecek)
+
+cd Test
+npm install
+cordova prepare android
+cordova run android
+
+7- Inappbrowser ile ilgili dokümantasyon / metodlara aşağıdaki linkten ulaşabilirsiniz.
+Sayfa yüklenmeden post gönderme vs incelenebilir. 
+https://cordova.apache.org/docs/en/10.x/reference/cordova-plugin-inappbrowser/
+
+8-
+Şu an için uygulamada gerekli pluginleri biz ekledik; camera, media ile ilgili izinleri
+Android projesi altında AndroidManifest.xml altına otomatik eklemektedir. Gereken ek izin varsa
+AndroidManifest.xml dosyasında eklemeler yapabilirsiniz. 
+
+** Test uygulamasında şuan permission plugini yüklemediğimizden,
+gerekli izinleri telefonunuzun uygulama ayarlarına girip,  Mikrofon ve kamera izinleri elle 
+açtıktan sonra testlerinizi gerçekleştirebilirsiniz.
+
+Şuan inappbrowserda yaşanılan kamera izni ile ilgili bir issue, buna benzer googleda aratılabilir
+https://github.com/apache/cordova-plugin-inappbrowser/issues/741
+
+
+cordova-plugin-camera 5.0.2 "Camera"
+cordova-plugin-file 6.0.2 "File"
+cordova-plugin-inappbrowser 5.0.0 "InAppBrowser"
+cordova-plugin-media-capture 3.0.3 "Capture"
+cordova-plugin-whitelist 1.3.4 "Whitelist"
+
+
+
+9- Aşağıdaki şekilde eventler siteden uygulamaya geri paslanabilir.
+
+webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify({my_message: "message"}));
+
